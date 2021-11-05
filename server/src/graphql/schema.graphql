@@ -1,0 +1,40 @@
+type Query {
+    staff: [Staff!]!
+    clients: [Client!]!
+    appointments: [Appointment!]!
+}
+
+type Mutation {
+    createClient(name: String!): Identifier!
+    deleteClient(id: String!): Identifier!
+    createStaff(firstName: String!, lastName: String!): Identifier!
+    deleteStaff(id: String!): Identifier!
+    createAppointment(name: String!, start: String!, end: String!, client: String!, staff: String!, notes: String!): Identifier!
+    deleteAppointment(id: String!): Identifier!
+}
+
+#Schema Types
+type Staff {
+    id: String!
+    firstName: String!
+    lastName: String!
+}
+
+type Client {
+    id: String!
+    name: String!
+}
+
+type Appointment {
+    id: String!
+    name: String!
+    start: String!
+    end: String!
+    staff: String!
+    client: String!
+    notes: String!
+}
+
+type Identifier {
+    id: Int!
+}

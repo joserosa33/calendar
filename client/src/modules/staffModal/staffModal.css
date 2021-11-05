@@ -1,0 +1,8 @@
+.modal-staff {
+    display: flex;
+    flex-flow: column;
+}
+
+.modal-staff div {
+    margin-bottom: 1rem;
+}

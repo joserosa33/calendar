@@ -1,0 +1,15 @@
+{
+  "name": "calendar",
+  "version": "1.0.0",
+  "description": "A small calendar to manage events between clients and staff",
+  "main": "index.js",
+  "scripts": {
+    "server": "cd server && yarn build && yarn start",
+    "client": "cd client && yarn build && yarn serve",
+    "start": "yarn server & yarn client"
+  },
+  "author": "jose.rosa",
+  "license": "ISC",
+  "private": true,
+  "workspaces": ["client", "server"]
+}

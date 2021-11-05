@@ -1,0 +1,13 @@
+.App {
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  margin: 0 10%;
+}
+
+.Calendar {
+  margin: 1rem 0;
+}

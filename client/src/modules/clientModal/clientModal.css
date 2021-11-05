@@ -1,0 +1,8 @@
+.modal-client {
+    display: flex;
+    flex-flow: column;
+}
+
+.modal-client div {
+    margin-bottom: 1rem;
+}
